@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-thumb-green-400::-webkit-scrollbar-thumb {
+  background-color: #4ade80;
+  border-radius: 3px;
+}
+
+.scrollbar-track-gray-900::-webkit-scrollbar-track {
+  background-color: #111827;
+}
+
+/* Font styling */
+body {
+  font-family: 'Courier Prime', 'Courier New', monospace;
+}
+
+/* Text glow effect for enhanced terminal feel */
+.text-green-400 {
+  text-shadow: 0 0 5px rgba(74, 222, 128, 0.3);
+}
+
+.text-green-300 {
+  text-shadow: 0 0 3px rgba(134, 239, 172, 0.2);
+}
+
+/* Selection styling */
+::selection {
+  background-color: #4ade80;
+  color: #000000;
+}
